@@ -45,4 +45,4 @@ UVM_FATAL :    1
 [UVM/RELNOTES]     1
 
 //info statements with verbosity level MEDIUM, LOW, NONE will only be printed as they are the lower or equal than the default verbosity level is 200 (UVM_MEDIUM)
-//$display will not be executed, because, whenever fatal occurs it will teriminate the execution
+//$display will not be executed, because, whenever fatal occurs it will teriminate the execution.
