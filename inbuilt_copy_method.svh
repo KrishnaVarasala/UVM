@@ -58,7 +58,7 @@ endmodule
 
 output:
 ---------------------------------------
-Name           Type         Size  Value
+Name           Type         Size  Value                  //original(tr_a)
 ---------------------------------------
 tr_a           transaction  -     @336 
   data         integral     4     'h9  
@@ -66,7 +66,7 @@ tr_a           transaction  -     @336
     temp_data  integral     4     'h7  
 ---------------------------------------
 ---------------------------------------
-Name           Type         Size  Value
+Name           Type         Size  Value                  //Copy(tr_b)
 ---------------------------------------
 tr_b           transaction  -     @341 
   data         integral     4     'h9  
@@ -74,7 +74,7 @@ tr_b           transaction  -     @341
     temp_data  integral     4     'h7  
 ---------------------------------------
 ---------------------------------------
-Name           Type         Size  Value
+Name           Type         Size  Value                  //after copy and changing the value in copy(tr_b), values in original(tr_a) remains unchanged
 ---------------------------------------
 tr_a           transaction  -     @336 
   data         integral     4     'h9  
@@ -82,7 +82,7 @@ tr_a           transaction  -     @336
     temp_data  integral     4     'h7  
 ---------------------------------------
 ---------------------------------------
-Name           Type         Size  Value
+Name           Type         Size  Value                 //after changing values only copy(tr_b) values changed. i.e same like deep_copy in system verilog
 ---------------------------------------
 tr_b           transaction  -     @341 
   data         integral     4     'he  
