@@ -11,7 +11,7 @@ class transaction extends uvm_sequence_item;
   endfunction
   
   `uvm_object_utils_begin(transaction) 
-    //`uvm_field_int(Argument(variable),FLAG);
+  //`uvm_field_int(Argument(variable),FLAG | format Specifier);
   `uvm_field_int(data,UVM_PRINT | UVM_DEC)
   `uvm_object_utils_end
   
