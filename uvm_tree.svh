@@ -7,6 +7,9 @@ uvm_test
 uvm_component
 */
 
+//uvm_component base class is uvm_test and uvm_test base class is uvm_root(null)
+//create a component extends from a base class and build that component in another class of upper hierarchy
+
 
 `include "uvm_macros.svh"
 import uvm_pkg::*;
